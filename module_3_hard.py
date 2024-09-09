@@ -1,5 +1,13 @@
+data_structure = [[1, 2, 3], {'a': 4, 'b': 5}, (6, {'cube': 7, 'drum': 8}), "Hello", [4]]
+print(len(data_structure))
+j = 0
+if j < len(data_structure):
+    print(data_structure[j])
+    j = j + 1
+
+
+
 x = [1, 2, 3]
-# print(type(x))
 # print(isinstance(x, (int, float, list, dict, str)))  # Output: True
 # n = len(x)
 # print(type(n))
@@ -7,17 +15,16 @@ x = [1, 2, 3]
 # print(type(i))
 # print(i)
 k = 0
-if isinstance(x, str):
-
+if isinstance(x, list):
     for i in x:
         k = k + i
-        print(k)
 else:
     print('stop')
-
-
-print(x)
 print(k)
+k = k + len(x)
+print(k)
+
+
 
 # y = "Hello"
 # print(isinstance(y, (int, str)))  # Output: True
