@@ -1,28 +1,40 @@
 data_structure = [[1, 2, 3], {'a': 4, 'b': 5}, (6, {'cube': 7, 'drum': 8}), "Hello", [4]]
-print(len(data_structure))
+# print(len(data_structure))
 j = 0
-if j < len(data_structure):
+while j < len(data_structure):
     print(data_structure[j])
+#    print(isinstance(data_structure[j], list))
+    k = 0
+    if isinstance(data_structure[j], list):
+        for i in data_structure[j]:
+            k = k + i
+    else:
+        print('stop')
+    print(k, 'расчет суммы первого блока')
+    k = k + len(data_structure[j])
+    print(k, 'рсчет суммы с длинной блока')
+
     j = j + 1
 
 
 
-x = [1, 2, 3]
+
+# x = [1, 2, 3]
 # print(isinstance(x, (int, float, list, dict, str)))  # Output: True
 # n = len(x)
 # print(type(n))
 # i = x[0]
 # print(type(i))
 # print(i)
-k = 0
-if isinstance(x, list):
-    for i in x:
-        k = k + i
-else:
-    print('stop')
-print(k)
-k = k + len(x)
-print(k)
+# k = 0
+# if isinstance(x, list):
+#     for i in x:
+#         k = k + i
+# else:
+#     print('stop')
+# print(k)
+# k = k + len(x)
+# print(k)
 
 
 
